@@ -75,7 +75,7 @@ else
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules_s_flatten_apex.mk)
 endif
 # Pixel
-$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 else
 $(warning Building vanilla - without gapps)
 endif
